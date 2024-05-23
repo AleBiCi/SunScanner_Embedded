@@ -16,11 +16,11 @@
 #include <ArduinoJson.h>
 
 // Replace with your network credentials
-const char* ssid = "Xiaomi_12";
-const char* password = "5parole06";
+const char* ssid = "XXXX";
+const char* password = "XXXX";
 
 // Initialize Telegram BOT
-#define BOTtoken "6265175075:AAFyCUsCYcVOUQ_-0LudOPevlqcnL5G8wck"  // your Bot Token (Get from Botfather)
+#define BOTtoken "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXX"  // your Bot Token (Get from Botfather)
 
 // Use @myidbot to find out the chat ID of an individual or a group
 // Also note that you need to click "start" on a bot before it can
