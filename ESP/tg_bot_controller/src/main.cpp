@@ -42,8 +42,12 @@ unsigned long lastTimeBotRan;
 const int ledPin = LED_BUILTIN;
 bool ledState = LOW;
 
+char* RX_buffer;
+char* TX_buffer;
+
 // Function prototypes
 void handleNewMessages(int numNewMessages);
+int receiveDataFromMSP(); // receives data from MSP through established UART connection
 
 /* ################################################## */
 
@@ -146,4 +150,28 @@ void handleNewMessages(int numNewMessages) {
   }
 }
 
+/*
+TO DO: establish which message the MSP should send the ESP32, for example
 
+| START_BYTE | ANGLE1 | ANGLE2 | V_PANEL | X_GPS | Y_GPS | Z_GPS | STOP_BYTE |
+
+w/ END_BYTE = START_BYTE == 11111111
+
+*/
+
+int receiveDataFromMSP() {
+  Serial2.begin(9600);
+  char receive = 0;
+  uint16_t cycles = 0; 
+  do{
+    if(Serial2.available()) receive = Serial2.read();
+    cycles++;
+  } while((receive!=255) && cycles<10); // We set START_BYTE of data packet as '11111111' (aka 255), so we check when we receive it from the MSP
+  if(cycles>=10) return 1;              // Also consider edge case where we don't receive START_BYTE in 10s --> return 1
+  while(Serial2.available()) {
+    receive = Serial2.read();
+    strcat(RX_buffer, &receive);
+    // If we receive STOP_BYTE --> stop reception and process received packet
+    // CONSIDER RECEIVING n PACKETS AND THEN AVERAGING THE VALUES OUT 
+  }
+}
