@@ -16,11 +16,11 @@
 #include <ArduinoJson.h>
 
 // Replace with your network credentials
-const char* ssid = "XXXX";
-const char* password = "XXXX";
+const char* ssid = "X";
+const char* password = "X";
 
 // Initialize Telegram BOT
-#define BOTtoken "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXX"  // your Bot Token (Get from Botfather)
+#define BOTtoken "X"  // your Bot Token (Get from Botfather)
 
 // Use @myidbot to find out the chat ID of an individual or a group
 // Also note that you need to click "start" on a bot before it can
@@ -39,8 +39,53 @@ UniversalTelegramBot bot(BOTtoken, client);
 int botRequestDelay = 1000;
 unsigned long lastTimeBotRan;
 
-const int ledPin = 2;
+const int ledPin = LED_BUILTIN;
 bool ledState = LOW;
+
+// Function prototypes
+void handleNewMessages(int numNewMessages);
+
+/* ################################################## */
+
+void setup() {
+  Serial.begin(115200);
+
+  #ifdef ESP8266
+    configTime(0, 0, "pool.ntp.org");      // get UTC time via NTP
+    client.setTrustAnchors(&cert); // Add root certificate for api.telegram.org
+  #endif
+
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, ledState);
+  
+  // Connect to Wi-Fi
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+  #ifdef ESP32
+    client.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
+  #endif
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
+  }
+  // Print ESP32 Local IP Address
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+  if (millis() > lastTimeBotRan + botRequestDelay)  {
+    int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+
+    while(numNewMessages) {
+      Serial.println("got response");
+      handleNewMessages(numNewMessages);
+      numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+    }
+    lastTimeBotRan = millis();
+  }
+}
+
+/* ################################################## */
 
 // Handle what happens when you receive new messages
 void handleNewMessages(int numNewMessages) {
@@ -50,12 +95,18 @@ void handleNewMessages(int numNewMessages) {
     // Chat id of the requester
     String chat_id = String(bot.messages[i].chat_id);
     
+    bool auth = false;
     for(auto a : AUTH_USERS) {
-      if(chat_id != a) {
-        bot.sendMessage(chat_id, "Unauthorized user", "");
-        continue;
+      if(chat_id == a) {
+        auth=true;
+        break;
       }
     }
+    if(!auth) {
+      bot.sendMessage(chat_id, "Unauthorized user", "");
+      continue;
+    } else auth=!auth;
+
     
     // Print the received message
     String text = bot.messages[i].text;
@@ -95,40 +146,4 @@ void handleNewMessages(int numNewMessages) {
   }
 }
 
-void setup() {
-  Serial.begin(115200);
 
-  #ifdef ESP8266
-    configTime(0, 0, "pool.ntp.org");      // get UTC time via NTP
-    client.setTrustAnchors(&cert); // Add root certificate for api.telegram.org
-  #endif
-
-  pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, ledState);
-  
-  // Connect to Wi-Fi
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
-  #ifdef ESP32
-    client.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
-  #endif
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(1000);
-    Serial.println("Connecting to WiFi..");
-  }
-  // Print ESP32 Local IP Address
-  Serial.println(WiFi.localIP());
-}
-
-void loop() {
-  if (millis() > lastTimeBotRan + botRequestDelay)  {
-    int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-
-    while(numNewMessages) {
-      Serial.println("got response");
-      handleNewMessages(numNewMessages);
-      numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-    }
-    lastTimeBotRan = millis();
-  }
-}
