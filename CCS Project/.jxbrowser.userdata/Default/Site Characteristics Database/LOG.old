@@ -1,2 +1,5 @@
-2024/04/12-07:39:09.194 8e03 Creating DB /Users/alessandrobianchiceriani/Desktop/Ale Varie DONTTOUCH/UNITN/Terzo Anno/Primo Semestre/Embedded Software/SunScanner_Embedded/CCS Project/.jxbrowser.userdata/Default/Site Characteristics Database since it was missing.
-2024/04/12-07:39:09.282 8e03 Reusing MANIFEST /Users/alessandrobianchiceriani/Desktop/Ale Varie DONTTOUCH/UNITN/Terzo Anno/Primo Semestre/Embedded Software/SunScanner_Embedded/CCS Project/.jxbrowser.userdata/Default/Site Characteristics Database/MANIFEST-000001
+2024/07/08-11:42:22.072 3148 Log #3: 3 ops saved to Table #4 OK
+2024/07/08-11:42:22.073 3148 Archiving C:\Users\Computer\Desktop\ALE VARIE\UNI\Embedded Software\Repo_Embedded\SunScanner_Embedded\CCS Project\.jxbrowser.userdata\Default\Site Characteristics Database/000003.log: OK
+2024/07/08-11:42:22.073 3148 Table #4: 3 entries OK
+2024/07/08-11:42:22.075 3148 Archiving C:\Users\Computer\Desktop\ALE VARIE\UNI\Embedded Software\Repo_Embedded\SunScanner_Embedded\CCS Project\.jxbrowser.userdata\Default\Site Characteristics Database/MANIFEST-000001: OK
+2024/07/08-11:42:22.223 3148 **** Repaired leveldb C:\Users\Computer\Desktop\ALE VARIE\UNI\Embedded Software\Repo_Embedded\SunScanner_Embedded\CCS Project\.jxbrowser.userdata\Default\Site Characteristics Database; recovered 1 files; 219 bytes. Some data may have been lost. ****
