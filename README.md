@@ -60,5 +60,5 @@ This project is developed by a team of three students of the University of Trent
 
 ## Credits
 
-[Conversion .png to HEX](link)
+[Conversion .png to HEX](https://nununoisy.github.io/JSFormer/)
 
