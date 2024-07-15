@@ -25,20 +25,19 @@ This project is developed by a team of three students of the University of Trent
 
 ## Features
 
-Global Positioning System: to set automatically the solar cell directly the sun
-2x Gear box: For increase the movement of servo to 180 degree to 360
-Possibility to manually adjust the position of the Solar Cell
-View in Real - Time Voltage catch the sun through the Solar Cell
+- Global Positioning System: to set automatically the solar cell directly the sun
+- 2x Gear box: For increase the movement of servo to 180 degree to 360
+- Possibility to manually adjust the position of the Solar Cell
+- View in Real - Time Voltage catch the sun through the Solar Cell
 
 
 ## Resources used
 
-Texas Instruments MSP432 - P401R
-BoosterPack MKII
-2x Servo Motor
-GPS Ublox neo 6m
-CCS - Code Composer Studio
-
+- Texas Instruments MSP432 - P401R
+- BoosterPack MKII
+- 2x Servo Motor
+- GPS Ublox neo 6m
+- CCS - Code Composer Studio
 
 # Schematic Project
 
