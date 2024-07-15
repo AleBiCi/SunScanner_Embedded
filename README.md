@@ -8,20 +8,19 @@ This project is developed by a team of three students of the University of Trent
 
 ## Index Folder
 
-[Documentation](link)
-[Presentation](link)
-[Link video](link)
-[Schematic Project](link)
-[Software](link)
-[GPS](link)
-[GPS code](link)
-[Servo Motor](link)
-[Servo Code](link)
-[Menu - Display](link)
-[Display Code](link)
-[Bitmap .png](link)
-file
-[Buttons / Analog Joystick code](link)
+- [Documentation](link)
+  - [Presentation](link)
+  - [Link video](link)
+  - [Schematic Project](link)
+- [Software](link)
+  - [GPS](link)
+    - [GPS code](link)
+  - [Servo Motor](link)
+    - [Servo Code](link)
+  - [Menu - Display](link)
+    - [Display Code](link)
+    - [Bitmap .png](link)
+    - [Buttons / Analog Joystick code](link)
 
 
 ## Features
