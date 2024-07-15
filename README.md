@@ -8,19 +8,19 @@ This project is developed by a team of three students of the University of Trent
 
 ## Index Folder
 
-- [Documentation](link)
-  - [Presentation](link)
-  - [Link video](link)
-  - [Schematic Project](link)
-- [Software](link)
-  - [GPS](link)
-    - [GPS code](link)
-  - [Servo Motor](link)
-    - [Servo Code](link)
-  - [Menu - Display](link)
-    - [Display Code](link)
-    - [Bitmap .png](link)
-    - [Buttons / Analog Joystick code](link)
+- [Documentation](#documentation)
+  - [Presentation](#presentation)
+  - [Link video](#link-video)
+  - [Schematic Project](#schematic-project)
+- [Software](#software)
+  - [GPS](#GPS)
+    - [GPS code](#GPS-code)
+  - [Servo Motor](#servo-motor)
+    - [Servo Code](#servo-code)
+  - [Menu - Display](#menu-display)
+    - [Display Code](#display-code)
+    - [Bitmap .png](#bitmap-png)
+    - [Buttons / Analog Joystick code](#buttons-analog-joystick)
 
 
 ## Features
@@ -39,7 +39,8 @@ This project is developed by a team of three students of the University of Trent
 - GPS Ublox neo 6m
 - CCS - Code Composer Studio
 
-# Schematic Project
+## Schematic Project
+![immagine](./.scheme)
 
 
 
@@ -47,7 +48,51 @@ This project is developed by a team of three students of the University of Trent
 
 
 
-## Project Layout
+### Project Layout
+```
+├── README.md
+├── MSP432
+│   └── MSP_Sensors
+|       ├── MSP_Sensors.ino
+|       ├── Adafruit_Sensor.h
+|       ├── DHT.h
+|       ├── DHT_U.h
+|       ├── DHT.cpp
+|       └── DHT_U.cpp
+│       └──
+└── backend
+    ├── index.js
+    ├── package.json
+    ├── AI
+    │   ├── Products.py
+    │   └── imageRecognition.py
+    ├── app
+    │   ├── app.js
+    │   ├── product.js
+    │   ├── sensor.js
+    │   ├── wishlist.js
+    │   └── models
+    │       ├── product.js
+    │       └── sensor.js
+    └── static
+        ├── index.css
+        ├── index.html
+        └── index.js
+```
+
+### Pin scheme
+|Pin|Description|
+|--|--|
+|GND|xx|
+|5V|xx|
+|P|VCC-servo_1|
+|P|DATA-servo_1|
+|P|GND-servo_1|
+|P|VCC-servo_2|
+|P|DATA-servo_2|
+|P|GND-servo_2|
+|P|VCC-solar_cell|
+|P|GN-solar_cell|
 
 
 
@@ -55,7 +100,7 @@ This project is developed by a team of three students of the University of Trent
 ## Demo Video
 
 ![Immagine di copertina](link)
-[Sun Scanner](https://youtube.com)   //link corretto di yt con il video caricato
+[Sun Scanner](https://youtube.com)
 
 
 ## Credits
