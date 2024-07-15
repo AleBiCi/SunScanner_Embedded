@@ -1,1 +1,0 @@
-{"net":{"http_server_properties":{"servers":[{"anonymization":[],"server":"https://optimizationguide-pa.googleapis.com","supports_spdy":true}],"supports_quic":{"address":"2001:b07:646b:ccce:5160:dea4:6398:569b","used_quic":true},"version":5},"network_qualities":{"CAESABiAgICA+P////8B":"4G","CAISABiAgICA+P////8B":"3G"}}}
