@@ -42,10 +42,19 @@ This project is developed by a team of three students of the University of Trent
 ## Schematic Project
 ![immagine](./.scheme)
 
-
-
-
-
+### Pin scheme
+|Pin|Description|
+|--|--|
+|GND|xx|
+|5V|xx|
+|P|VCC-servo_1|
+|P|DATA-servo_1|
+|P|GND-servo_1|
+|P|VCC-servo_2|
+|P|DATA-servo_2|
+|P|GND-servo_2|
+|P|VCC-solar_cell|
+|P|GN-solar_cell|
 
 
 ### Project Layout
@@ -80,19 +89,6 @@ This project is developed by a team of three students of the University of Trent
         └── index.js
 ```
 
-### Pin scheme
-|Pin|Description|
-|--|--|
-|GND|xx|
-|5V|xx|
-|P|VCC-servo_1|
-|P|DATA-servo_1|
-|P|GND-servo_1|
-|P|VCC-servo_2|
-|P|DATA-servo_2|
-|P|GND-servo_2|
-|P|VCC-solar_cell|
-|P|GN-solar_cell|
 
 
 
