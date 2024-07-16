@@ -98,6 +98,11 @@ This project is developed by a team of three students of the University of Trent
 ![Immagine di copertina](link)
 [Sun Scanner](https://youtube.com)
 
+## Group members
+![Author](https://img.shields.io/badge/Author-Daniele_Visentin-blue)
+![Author](https://img.shields.io/badge/Author-Alessandro_Bianchi_Ceriani-blue)
+![Author](https://img.shields.io/badge/Author-Gerardo_Chianucci-blue)
+
 
 ## Credits
 
