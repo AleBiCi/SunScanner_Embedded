@@ -15,6 +15,7 @@ Graphics_Context g_sContext;
 
 /* ADC results buffer */
 static uint16_t resultsBuffer[2];
+uint16_t analogRead;
 
 char *home_menu_names[4] = { (char*)"Specs", (char*)"GPS", (char*)"Move", (char*)"History"};
 char *home_menu_move[3] = { (char*)"Automatic", (char*)"Zenit", (char*)"Manual"};
@@ -134,7 +135,7 @@ void drawMenu2(int i, int sel) {
     //SPECS
     case 1:
       //v_out = Tensione(PIN_1);
-      sprintf(tension_string, "%f", realTension(v_out));
+      sprintf(tension_string, "%5d",analogRead /*realTension(v_out)*/);
       drawMenuElement(&g_sContext, 8, 51, &VOLTAGE_UNCOMP, tension_string);
       break;
 
@@ -277,13 +278,16 @@ void setup_menu(){
     MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P6, GPIO_PIN0, GPIO_TERTIARY_MODULE_FUNCTION);
     MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P4, GPIO_PIN4, GPIO_TERTIARY_MODULE_FUNCTION);
 
+    /*pin per lettura valori pannello*/
+    MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P6, GPIO_PIN6, GPIO_TERTIARY_MODULE_FUNCTION);
+
     /* Initializing ADC (ADCOSC/64/8) */
     MAP_ADC14_enableModule();
     MAP_ADC14_initModule(ADC_CLOCKSOURCE_ADCOSC, ADC_PREDIVIDER_32, ADC_DIVIDER_8, 0);
 
     /* Configuring ADC Memory (ADC_MEM0 - ADC_MEM1 (A15, A9)  with repeat)
      * with internal 2.5v reference */
-    MAP_ADC14_configureMultiSequenceMode(ADC_MEM0, ADC_MEM1, true);
+    MAP_ADC14_configureMultiSequenceMode(ADC_MEM0, ADC_MEM2, true);
     MAP_ADC14_configureConversionMemory(ADC_MEM0,
                                         ADC_VREFPOS_AVCC_VREFNEG_VSS,
                                         ADC_INPUT_A15, ADC_NONDIFFERENTIAL_INPUTS);
@@ -292,9 +296,14 @@ void setup_menu(){
                                         ADC_VREFPOS_AVCC_VREFNEG_VSS,
                                         ADC_INPUT_A9, ADC_NONDIFFERENTIAL_INPUTS);
 
+    MAP_ADC14_configureConversionMemory(ADC_MEM2,
+                                        ADC_VREFPOS_AVCC_VREFNEG_VSS,
+                                        ADC_INPUT_A14, ADC_NONDIFFERENTIAL_INPUTS);
+
     /* Enabling the interrupt when a conversion on channel 1 (end of sequence)
      *  is complete and enabling conversions */
-    MAP_ADC14_enableInterrupt(ADC_INT1);
+    ADC14_enableInterrupt(ADC_INT1);
+    ADC14_enableInterrupt(ADC_INT2);
     MAP_Interrupt_enableInterrupt(INT_ADC14);
 
     /* Setting up the sample timer to automatically step through the sequence
