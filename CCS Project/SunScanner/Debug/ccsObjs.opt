@@ -6,7 +6,7 @@
 "./src/NMEAParser.obj"
 "./src/servo/Sun_az_alt.obj"
 "../msp432p401r.cmd"
--l"/Users/alessandrobianchiceriani/Desktop/Ale Varie DONTTOUCH/UNITN/Terzo Anno/Primo Semestre/Embedded Software/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/lib/ccs/m4f/grlib.a"
+-l"C:/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/lib/ccs/m4f/grlib.a"
 -l"ti/display/lib/display.aem4f"
 -l"ti/grlib/lib/ccs/m4f/grlib.a"
 -l"third_party/spiffs/lib/ccs/m4f/spiffs.a"

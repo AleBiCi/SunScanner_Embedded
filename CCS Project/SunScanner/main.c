@@ -149,6 +149,12 @@ void ADC14_IRQHandler(void)
             joystick_state[1] = false;
         }
     }
+    if(status & ADC_INT2){
+        analogRead = ADC14_getResult(ADC_MEM2);
+        if(depth == 2 && alt1 == 1){
+            selMenu(alt1,depth,alt2);
+        }
+    }
 }
 
 void TA1_0_IRQHandler(void)
