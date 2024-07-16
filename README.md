@@ -35,7 +35,7 @@ This project is developed by a team of three students of the University of Trent
 
 - Texas Instruments MSP432 - P401R
 - BoosterPack MKII
-- 2x Servo Motor
+- 2x Servo Motors MS18
 - GPS Ublox neo 6m
 - CCS - Code Composer Studio
 
@@ -99,10 +99,11 @@ This project is developed by a team of three students of the University of Trent
 [Sun Scanner](https://youtube.com)
 
 ## Group members
-![Author](https://img.shields.io/badge/Author-Daniele_Visentin-blue)
-![Author](https://img.shields.io/badge/Author-Alessandro_Bianchi_Ceriani-blue)
-![Author](https://img.shields.io/badge/Author-Gerardo_Chianucci-blue)
-
+|Name|Email|
+|--|--|
+|Alessandro Bianchi Ceriani|a.bianchiceriani@studenti.unitn.it|
+|Gerardo Chianucci|gerardo.chianucci@studentu.unitn.it|
+|Daniele Visentin|daniele.visentin@studenti.unitn.it|
 
 ## Credits
 
