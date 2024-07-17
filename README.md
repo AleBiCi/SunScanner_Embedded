@@ -1,4 +1,4 @@
-# Sun Scanner
+# SunScanner
 
 Introducing SunScanner, a TI MSP432-powered smart device that tracks the sun to harvest solar energy.
 It uses the GPS coordinates to understand the sun positioning in every place in the entire word.
@@ -14,7 +14,7 @@ This project is developed by a team of three students of the University of Trent
   -  [Pin Scheme](#pin-scheme)
   -  [Project Layout](#project-layout)
 - [Demo video](#demo-video)
-- [Gruoup members](#group-memebers)
+- [Gruoup members](#group-members)
 - [Credits](#credits)
 
 
@@ -38,18 +38,13 @@ This project is developed by a team of three students of the University of Trent
 ![immagine](./.scheme)
 
 ### Pin Scheme
-|Pin|Description|
-|--|--|
-|GND|xx|
-|5V|xx|
-|P|VCC-servo_1|
-|P|DATA-servo_1|
-|P|GND-servo_1|
-|P|VCC-servo_2|
-|P|DATA-servo_2|
-|P|GND-servo_2|
-|P|VCC-solar_cell|
-|P|GN-solar_cell|
+|component|port|pin|
+|--|--|--|
+|Servo_PWM|2|5
+|Servo_PWM|2|6|
+|Voltage|6|6|
+|GPS|3|2/3|
+|ESP32|xx|xx|
 
 
 ### Project Layout
