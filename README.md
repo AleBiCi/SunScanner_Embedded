@@ -1,4 +1,5 @@
 # SunScanner
+<div align='center'> <img src = "img_solar_cell.jpg" alt = "Frame01" width = "500"> </div>
 
 Introducing SunScanner, a TI MSP432-powered smart device that tracks the sun to harvest solar energy.
 It uses the GPS coordinates to understand the sun positioning in every place in the entire word.
@@ -14,6 +15,7 @@ This project is developed by a team of three students of the University of Trent
   -  [Pin Scheme](#pin-scheme)
   -  [Project Layout](#project-layout)
 - [Demo video](#demo-video)
+- [Presentation](#presentation)
 - [Gruoup members](#group-members)
 - [Credits](#credits)
 
@@ -35,7 +37,7 @@ This project is developed by a team of three students of the University of Trent
 - CCS - Code Composer Studio
 
 ## Schematic Project
-![immagine](./.SunScanner_Schema.png)
+<img src = "SunScanner_Schema.png" alt = "Frame01" width = "500"> </div>
 
 ### Pin Scheme
 |component|port|pin|
@@ -80,8 +82,10 @@ This project is developed by a team of three students of the University of Trent
 
 ## Demo Video
 
-![Immagine di copertina](link)
-[Sun Scanner](https://youtube.com)
+[Sun Scanner](https://youtu.be/7Bo-yUQaSLg)
+
+## Presentation
+[Link Presentation](https://docs.google.com/presentation/d/1R6tl_jSoiLLPsk6RGqctIMuoVqyj2pdu-Sd7vOVIlfg/edit?usp=sharing)
 
 ## Group members
 |Name|Email|
@@ -93,4 +97,3 @@ This project is developed by a team of three students of the University of Trent
 ## Credits
 
 [Conversion .png to HEX](https://nununoisy.github.io/JSFormer/)
-
