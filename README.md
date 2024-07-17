@@ -9,9 +9,9 @@ This project is developed by a team of three students of the University of Trent
 
 ## Index Folder
 
-- [Feauteres](#feauteres)
+- [Features](#features)
 - [System Requirements](#system-requirements)
-- [Project Configuration](#project-config)
+- [Get Started](#get-started)
 - [Schematic Project](#schematic-project)
   -  [Pin Scheme](#pin-scheme)
   -  [Project Layout](#project-layout)
@@ -37,9 +37,11 @@ This project is developed by a team of three students of the University of Trent
 - GPS Ublox neo 6m
 - CCS - Code Composer Studio
 
-## Project Configuration - Get Started
-In order to build and upload the project yourself, first clone the repo:
-'git clone [https://github.com/AleBiCi/SunScanner_Embedded/tree/stable](https://github.com/AleBiCi/SunScanner_Embedded/tree/stable)'
+## Get Started
+In order to build and upload the project yourself, first clone the 'stable' branch of the repo:
+```
+git clone https://github.com/AleBiCi/SunScanner_Embedded/tree/stable
+```
 Then import the CCS project folder in your local CCS Workspace (you might have to edit the include options according to your requirements, refer to the guide posted in the Moodle page).
 You should now be able to flash the board.
 
@@ -100,7 +102,7 @@ You should now be able to flash the board.
 |Alessandro Bianchi Ceriani|a.bianchiceriani@studenti.unitn.it|
 |Gerardo Chianucci|gerardo.chianucci@studentu.unitn.it|
 |Daniele Visentin|daniele.visentin@studenti.unitn.it|
-//
+
 We collaborated closely with eachother, both in presence and through Github.
 
 ## Credits
