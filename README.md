@@ -1,4 +1,5 @@
 # SunScanner
+<div align='center'> <img src = "img_solar_cell.jpg" alt = "Frame01" width = "500"> </div>
 
 Introducing SunScanner, a TI MSP432-powered smart device that tracks the sun to harvest solar energy.
 It uses the GPS coordinates to understand the sun positioning in every place in the entire word.
