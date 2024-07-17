@@ -35,7 +35,7 @@ This project is developed by a team of three students of the University of Trent
 - CCS - Code Composer Studio
 
 ## Schematic Project
-![immagine](./.scheme)
+![immagine](./.SunScanner_Schema.png)
 
 ### Pin Scheme
 |component|port|pin|
