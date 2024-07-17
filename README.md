@@ -15,6 +15,7 @@ This project is developed by a team of three students of the University of Trent
   -  [Pin Scheme](#pin-scheme)
   -  [Project Layout](#project-layout)
 - [Demo video](#demo-video)
+- [Presentation](#presentation)
 - [Gruoup members](#group-members)
 - [Credits](#credits)
 
@@ -83,6 +84,9 @@ This project is developed by a team of three students of the University of Trent
 
 ![Immagine di copertina](link)
 [Sun Scanner](https://youtube.com)
+
+## Presentation
+[Link Presentation](https://docs.google.com/presentation/d/1R6tl_jSoiLLPsk6RGqctIMuoVqyj2pdu-Sd7vOVIlfg/edit?usp=sharing)
 
 ## Group members
 |Name|Email|
