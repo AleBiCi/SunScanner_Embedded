@@ -8,19 +8,14 @@ This project is developed by a team of three students of the University of Trent
 
 ## Index Folder
 
-- [Documentation](#documentation)
-  - [Presentation](#presentation)
-  - [Link video](#link-video)
-  - [Schematic Project](#schematic-project)
-- [Software](#software)
-  - [GPS](#GPS)
-    - [GPS code](#GPS-code)
-  - [Servo Motor](#servo-motor)
-    - [Servo Code](#servo-code)
-  - [Menu - Display](#menu-display)
-    - [Display Code](#display-code)
-    - [Bitmap .png](#bitmap-png)
-    - [Buttons / Analog Joystick code](#buttons-analog-joystick)
+- [Feauteres](#feauteres)
+- [System Requirements](#system-requirements)
+- [Schematic Project](#schematic-project)
+  -  [Pin Scheme](#pin-scheme)
+  -  [Project Layout](#project-layout)
+- [Demo video](#demo-video)
+- [Gruoup members](#group-memebers)
+- [Credits](#credits)
 
 
 ## Features
@@ -31,7 +26,7 @@ This project is developed by a team of three students of the University of Trent
 - View in Real - Time Voltage catch the sun through the Solar Cell
 
 
-## Resources used
+## System Requirements
 
 - Texas Instruments MSP432 - P401R
 - BoosterPack MKII
@@ -42,7 +37,7 @@ This project is developed by a team of three students of the University of Trent
 ## Schematic Project
 ![immagine](./.scheme)
 
-### Pin scheme
+### Pin Scheme
 |Pin|Description|
 |--|--|
 |GND|xx|
