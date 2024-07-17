@@ -126,7 +126,7 @@ bool parseRMC(MessageRMC *mess) {
     
     // Checking for validity : calculated checksum chars have to match the originals + status field has to be valid (A = valid mess, V = not valid)
     if(!validateChecksum(mess) || strcmp(&mess->status, "A")!=0) {
-        return false; // if checksum comparison and validity status check didn't give positive result, return false
+        //return false; // if checksum comparison and validity status check didn't give positive result, return false
     }
 
     // CAST AND ASSIGN VALUES TO EACH FIELD

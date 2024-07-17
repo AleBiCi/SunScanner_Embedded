@@ -2,7 +2,7 @@
 #define SERVO_SUN_TRACKER_H_
 
 #include "servo_control.h"
-#include "Sun_az_alt.h"
+#include "ESP_control.h"
 
 /* *
  * Important!!!
@@ -26,12 +26,9 @@ void setup_servo_panel(Tservo_panel* controller, uint16_t port_az, uint16_t pin_
     setup_servo(&(controller->elevation),port_el,pin_el,0);
 }
 
-void point_sun(Tservo_panel* controller, tm* time_info_ptr, float Lat, float Lon, float Alt){
-    float _az, _el;
-    if(time_info_ptr->tm_year < 100) time_info_ptr->tm_year+=100;
-    SolarAzEl(time_info_ptr,Lat,Lon,Alt,&_az, &_el);
-    set_servo_angle(&(controller->azimuth), (_az/2));
-    set_servo_angle(&(controller->elevation), _el);
+void point_sun(Tservo_panel* controller){
+    set_servo_angle(&(controller->azimuth), (azimuth/2));
+    set_servo_angle(&(controller->elevation), elevation);
 }
 
 void pwm_panel_control(Tservo_panel* controller){

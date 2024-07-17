@@ -115,5 +115,4 @@ SUBDIRS := \
 ccs \
 src/LcdDriver \
 src \
-src/servo \
 

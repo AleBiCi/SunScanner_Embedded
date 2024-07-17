@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <math.h>
 
-
 /* Custom Includes */
 #include "gps/NMEAParser.h"
 #include "delay.h"
@@ -93,30 +92,23 @@ void gps_setup(uint32_t UART) {
     for(i=0; i<16; i++) {
         UART_transmitData(UART, UBX_CFG_MSG_GGA_OFF[i]);
     }
-    GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN0);
 
     for(i=0; i<16; i++) {
         UART_transmitData(UART, UBX_CFG_MSG_GSV_OFF[i]);
     }
-    GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN0);
 
     for(i=0; i<16; i++) {
         UART_transmitData(UART, UBX_CFG_MSG_GSA_OFF[i]);
     }
-    GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN0);
 
     for(i=0; i<16; i++) {
         UART_transmitData(UART, UBX_CFG_MSG_VTG_OFF[i]);
     }
-    GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN0);
 
     for(i=0; i<16; i++) {
         UART_transmitData(UART, UBX_CFG_MSG_GLL_OFF[i]);
     }
-    GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN0);
 
-    //CHANGE STATE
-//    current_state = STATE_ACQUISITION;
     delay_ms(1000);
 }
 

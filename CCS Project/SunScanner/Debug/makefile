@@ -14,7 +14,6 @@ ORDERED_OBJS += \
 "./src/LcdDriver/Crystalfontz128x128_ST7735.obj" \
 "./src/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" \
 "./src/NMEAParser.obj" \
-"./src/servo/Sun_az_alt.obj" \
 "../msp432p401r.cmd" \
 $(GEN_CMDS__FLAG) \
 -l"/Users/alessandrobianchiceriani/Desktop/Ale Varie DONTTOUCH/UNITN/Terzo Anno/Primo Semestre/Embedded Software/simplelink_msp432p4_sdk_3_40_01_02/source/ti/grlib/lib/ccs/m4f/grlib.a" \
@@ -37,12 +36,10 @@ RMDIR := rm -rf
 -include ccs/subdir_vars.mk
 -include src/LcdDriver/subdir_vars.mk
 -include src/subdir_vars.mk
--include src/servo/subdir_vars.mk
 -include subdir_rules.mk
 -include ccs/subdir_rules.mk
 -include src/LcdDriver/subdir_rules.mk
 -include src/subdir_rules.mk
--include src/servo/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -160,8 +157,8 @@ SunScanner.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "system_msp432p401r.obj" "ccs/startup_msp432p401r_ccs.obj" "src/LcdDriver/Crystalfontz128x128_ST7735.obj" "src/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "src/NMEAParser.obj" "src/servo/Sun_az_alt.obj" 
-	-$(RM) "main.d" "system_msp432p401r.d" "ccs/startup_msp432p401r_ccs.d" "src/LcdDriver/Crystalfontz128x128_ST7735.d" "src/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.d" "src/NMEAParser.d" "src/servo/Sun_az_alt.d" 
+	-$(RM) "main.obj" "system_msp432p401r.obj" "ccs/startup_msp432p401r_ccs.obj" "src/LcdDriver/Crystalfontz128x128_ST7735.obj" "src/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "src/NMEAParser.obj" 
+	-$(RM) "main.d" "system_msp432p401r.d" "ccs/startup_msp432p401r_ccs.d" "src/LcdDriver/Crystalfontz128x128_ST7735.d" "src/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.d" "src/NMEAParser.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

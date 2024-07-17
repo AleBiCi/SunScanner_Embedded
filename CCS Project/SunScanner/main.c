@@ -1,7 +1,7 @@
 #include <ti/devices/msp432p4xx/driverlib/driverlib.h>
 #include "finite_state_machine.h"
-#include "servo/Sun_az_alt.h"
 #include "menu.h"
+#include "ESP_control.h"
 
 void init_clk();
 
@@ -18,6 +18,7 @@ void main(void)
     setup_menu();
     gps_UART_setup();
     gps_setup(EUSCI_A2_BASE);
+    setupESPConnection();
     setup_servo_panel(&solar_panel, GPIO_PORT_P2, GPIO_PIN5, GPIO_PORT_P2, GPIO_PIN6);
 
     while(1){

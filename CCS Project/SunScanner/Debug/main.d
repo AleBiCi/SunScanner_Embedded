@@ -65,16 +65,17 @@ main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Te
 main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/delay.h
 main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/servo/servo_sun_tracker.h
 main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/servo/servo_control.h
-main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/servo/Sun_az_alt.h
+main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/ESP_control.h
 main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/time.h
 main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/abi_prefix.h
 main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_time.h
+main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/string.h
+main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h
+main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h
+main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/gps/gps.h
 main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/math.h
 main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_defs.h
 main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_limits.h
-main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/gps/gps.h
-main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/string.h
-main.obj: /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h
 main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/gps/NMEAParser.h
 
 ../main.c:
@@ -207,7 +208,7 @@ main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Te
 
 /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/servo/servo_control.h:
 
-/Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/servo/Sun_az_alt.h:
+/Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/ESP_control.h:
 
 /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/time.h:
 
@@ -215,17 +216,19 @@ main.obj: /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Te
 
 /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_time.h:
 
+/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/string.h:
+
+/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h:
+
+/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h:
+
+/Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/gps/gps.h:
+
 /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/math.h:
 
 /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_defs.h:
 
 /Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_limits.h:
-
-/Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/gps/gps.h:
-
-/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/string.h:
-
-/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/xlocale/_string.h:
 
 /Users/alessandrobianchiceriani/Desktop/Ale\ Varie\ DONTTOUCH/UNITN/Terzo\ Anno/Primo\ Semestre/Embedded\ Software/CCS\ Workspaces/SunScanner/libs/gps/NMEAParser.h:
 
