@@ -44,39 +44,12 @@ This project is developed by a team of three students of the University of Trent
 |Servo_PWM|2|6|
 |Voltage|6|6|
 |GPS|3|2/3|
-|ESP32|xx|xx|
+|ESP32_|15|16|
+|_ESP32|P2.3|P2.2|
 
 
 ### Project Layout
 ```
-├── README.md
-├── MSP432
-│   └── MSP_Sensors
-|       ├── MSP_Sensors.ino
-|       ├── Adafruit_Sensor.h
-|       ├── DHT.h
-|       ├── DHT_U.h
-|       ├── DHT.cpp
-|       └── DHT_U.cpp
-│       └──
-└── backend
-    ├── index.js
-    ├── package.json
-    ├── AI
-    │   ├── Products.py
-    │   └── imageRecognition.py
-    ├── app
-    │   ├── app.js
-    │   ├── product.js
-    │   ├── sensor.js
-    │   ├── wishlist.js
-    │   └── models
-    │       ├── product.js
-    │       └── sensor.js
-    └── static
-        ├── index.css
-        ├── index.html
-        └── index.js
 ```
 
 
