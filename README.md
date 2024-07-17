@@ -51,38 +51,27 @@ This project is developed by a team of three students of the University of Trent
 ### Project Layout
 ```
 ├── README.md
-├── MSP432
-│   └── SunScanner
-|       └──libs
-|          └──gps
-|          |  ├── gps.h
-|          |  └──NMEAparser.h
-|          └──servo
-|          |  ├── servo_control.h
-|          |  ├── servo_sun_tracker.h
-|          |  └──Sun_az_alt.h
-|          ├── menu.ino
-|          ├── finite_state_machine.h
-|          ├── DHT.h
-|          └──scenes.h
-└── backend
-    ├── index.js
-    ├── package.json
-    ├── AI
-    │   ├── Products.py
-    │   └── imageRecognition.py
-    ├── app
-    │   ├── app.js
-    │   ├── product.js
-    │   ├── sensor.js
-    │   ├── wishlist.js
-    │   └── models
-    │       ├── product.js
-    │       └── sensor.js
-    └── static
-        ├── index.css
-        ├── index.html
-        └── index.js
+└── MSP432
+   └── SunScanner
+       └──libs
+          └──gps
+             ├── gps.h
+             └──NMEAparser.h
+          └──servo
+             ├── servo_control.h
+             ├── servo_sun_tracker.h
+             └──Sun_az_alt.h
+          ├── menu.ino
+          ├── finite_state_machine.h
+          ├── delay.h
+          └── scenes.h
+       └──libs
+          └──servo
+             └──Sun_az_alt.c
+          ├── menu.ino
+          ├── finite_state_machine.h
+          ├── delay.h
+          └── scenes.h
 ```
 
 
