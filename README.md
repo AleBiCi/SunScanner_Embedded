@@ -82,8 +82,7 @@ This project is developed by a team of three students of the University of Trent
 
 ## Demo Video
 
-![Immagine di copertina](link)
-[Sun Scanner](https://youtube.com)
+[Sun Scanner](https://youtu.be/7Bo-yUQaSLg)
 
 ## Presentation
 [Link Presentation](https://docs.google.com/presentation/d/1R6tl_jSoiLLPsk6RGqctIMuoVqyj2pdu-Sd7vOVIlfg/edit?usp=sharing)
