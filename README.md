@@ -11,6 +11,8 @@ This project is developed by a team of three students of the University of Trent
 - [Features](#features)
 - [System Requirements](#system-requirements)
 - [Get Started](#get-started)
+  -  [MSP Programming](#msp-programming)
+  -  [ESP32-S3 Programming](#esp32-s3-programming)
 - [Schematic Project](#schematic-project)
   -  [Pin Scheme](#pin-scheme)
   -  [Project Layout](#project-layout)
