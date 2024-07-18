@@ -19,7 +19,7 @@ void main(void)
     gps_UART_setup();
     gps_setup(EUSCI_A2_BASE);
     setupESPConnection();
-    setup_servo_panel(&solar_panel, GPIO_PORT_P2, GPIO_PIN5, GPIO_PORT_P2, GPIO_PIN6);
+//    setup_servo_panel(&solar_panel, GPIO_PORT_P2, GPIO_PIN5, GPIO_PORT_P2, GPIO_PIN6);
 
     while(1){
         if(current_state < NUM_STATES){
