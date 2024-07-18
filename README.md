@@ -42,14 +42,14 @@ This project is developed by a team of three students of the University of Trent
 
 ## Get Started
 
-# MSP432 Programming
+### MSP432 Programming
 In order to build and upload the project yourself, first clone the 'main' branch of the repo:
 ```
 git clone https://github.com/AleBiCi/SunScanner_Embedded/
 ```
 Then import the 'SunScanner' CCS project folder in your local CCS Workspace (you might have to edit the include options according to your requirements, refer to the guide posted in the Moodle page).
 You should now be able to flash the MSP432P401R board.
-# ESP32-S3 Programming
+### ESP32-S3 Programming
 Inside the 'ESP' folder you'll find the PlatformIO project that you have to upload onto the ESP32-S3 board.
 If PlatformIO IDE isn't already set up on your machine, follow the official guide: [Start from here](https://docs.platformio.org/en/latest/core/installation/index.html) and end up [Here!](https://docs.platformio.org/en/latest/integration/ide/vscode.html)
 Then import the project, flash it onto the board and you're good to go!
